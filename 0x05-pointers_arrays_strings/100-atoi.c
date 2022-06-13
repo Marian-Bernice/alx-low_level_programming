@@ -19,7 +19,7 @@ int _atoi(char *s)
 			result = (result * 10) + (s[0] - '0') * sign_cache;
 		else if (result)
 			break;
-			
+
 		s++;
 	}
 
