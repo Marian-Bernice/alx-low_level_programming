@@ -41,7 +41,7 @@ void printHexes(char *b, int start, int end)
  * @b: string to print
  * @start: starting position
  * @end: ending position
- */
+*/
 
 void printASCII(char *b, int start, int end)
 {
@@ -50,7 +50,6 @@ void printASCII(char *b, int start, int end)
 	while (i < end)
 	{
 		ch = *(b + i + start);
-
 		if (!isPrintableASCII(ch))
 			ch = 46;
 		printf("%c", ch);
@@ -79,5 +78,5 @@ void print_buffer(char *b, int size)
 			printf("\n");
 		}
 	} else
-		printf("\n");
+			printf("\n");
 }
